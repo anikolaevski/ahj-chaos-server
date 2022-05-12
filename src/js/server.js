@@ -40,21 +40,21 @@ const wsServer = new WS.Server({ server });
 wsServer.on('connection', (ws, req) => {
   const errCallback = (err) => {
     if (err) {
-    // TODO: handle error
+      console.log(err);
     }
   }
   ws.on('message', msg => {
-    if (msg.includes('{')) {
+    try {
       parseMessage(msg);
-    } else {
-      console.log(msg);
-    }
-    
-    ws.send('response', errCallback);
+      ws.send('response', errCallback);
+    } catch (err2) {
+      console.log(err, msg);
+    } 
   });
   ws.send('welcome', errCallback);
 });
 server.listen(port);
+console.log('Started');
 
 function parseMessage(msg) {
   const message = JSON.parse(msg);

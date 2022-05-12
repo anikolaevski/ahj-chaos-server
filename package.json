@@ -14,7 +14,7 @@
   "author": "Alexey Nikolaevskiy <anikolaevski@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.12.10",
+    "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "babel": "^6.23.0",
@@ -27,7 +27,7 @@
     "eslint-plugin-import": "^2.22.1",
     "file-loader": "^5.0.2",
     "html-loader": "^0.5.5",
-    "jest": "^25.5.4",
+    "jest": "^28.1.0",
     "license-webpack-plugin": "^2.3.11",
     "puppeteer": "^2.1.1",
     "responsive-loader": "^1.2.0",
@@ -37,7 +37,7 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "eslint-config-airbnb": "^18.2.1",
-    "forever": "^3.0.4",
+    "forever": "^4.0.3",
     "html-webpack-plugin": "^3.2.0",
     "http-event-stream": "^0.2.0",
     "koa": "^2.13.1",
@@ -45,11 +45,11 @@
     "koa-router": "^8.0.8",
     "mini-css-extract-plugin": "^0.9.0",
     "needle": "^2.6.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
     "terser-webpack-plugin": "^2.3.8",
     "uuid": "^8.3.2",
-    "webpack": "^4.46.0",
-    "webpack-dev-server": "^3.11.2",
+    "webpack": "^5.72.1",
+    "webpack-dev-server": "^4.9.0",
     "webpack-merge": "^4.2.2",
     "ws": "^7.4.2"
   }
